@@ -13,6 +13,6 @@ MFC对话框应用程序.
 ---
 GDI做的界面，有空的时候可以改成GDI+   
 本地小数据Access   
-![界面UI](https://note.youdao.com/favicon.ico)
+![界面UI](https://github.com/zhengshizeng/CHTGL/blob/master/ui.jpg)
 
 Excel模板导出

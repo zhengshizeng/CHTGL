@@ -1,0 +1,631 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CHTGL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CHTGL.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 299, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CHTGL"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         156,IDC_STATIC,"Static",SS_BITMAP,7,8,115,115
+    LTEXT           "CHTGL 1.0 版",IDC_STATIC,135,35,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2018",IDC_STATIC,135,55,119,8
+    DEFPUSHBUTTON   "确定",IDOK,242,7,50,14,WS_GROUP
+    LTEXT           "技术支持 Azeng软件",IDC_STATIC,135,75,119,8
+END
+
+IDD_CHTGL_DIALOG DIALOGEX 0, 0, 511, 294
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "应收应付管理系统"
+FONT 14, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_WND,171,116,333,176
+    PUSHBUTTON      "基本信息",IDC_BTN_JBXX,24,60,64,23
+    PUSHBUTTON      "合同管理",IDC_BTN_HTGL,24,87,64,23
+    PUSHBUTTON      "往来管理",IDC_BTNWLGL,24,114,65,22
+    PUSHBUTTON      "开票管理",IDC_BTN_KPGL,25,141,65,22
+    PUSHBUTTON      "提成管理",IDC_BTN_TCGL,27,170,65,22
+    PUSHBUTTON      "预警信息",IDC_BTN_YJXX,26,203,65,22
+    LTEXT           "",IDC_STATIC_TTEXT,130,46,309,26
+END
+
+IDD_SYS_DLG DIALOG DISCARDABLE  0, 0, 386, 252
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "收款类型",IDC_STATIC,6,10,105,132
+    EDITTEXT        IDC_EDIT_SKLX,17,103,83,13,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_SKLX,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,16,25,85,71
+    PUSHBUTTON      "保存",IDC_BTN_SKLXSAVE,16,125,32,13
+    PUSHBUTTON      "删除",IDC_BTN_SKLXDEL,64,125,32,13
+    PUSHBUTTON      "备份数据",IDC_BTN_Backup,227,28,60,25
+    PUSHBUTTON      "还原数据",IDC_BTN_Restore,224,70,60,25
+END
+
+IDD_ADDQWR DIALOG DISCARDABLE  0, 0, 386, 252
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_QWR,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,6,79,374,154
+    RTEXT           "姓名:",IDC_STATIC,20,12,34,12
+    RTEXT           "身份证:",IDC_STATIC,20,32,34,12
+    RTEXT           "手机号:",IDC_STATIC,20,52,34,12
+    EDITTEXT        IDC_EDIT_NAME,60,11,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFZ,60,30,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TEL,60,49,98,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_BTN_SAVE,310,12,52,15
+    PUSHBUTTON      "删除",IDC_BTN_DEL,310,33,52,15
+    PUSHBUTTON      "导出签约人",IDC_BTN_EXPORT,311,54,52,15
+END
+
+IDD_ADDHT_DLG DIALOG DISCARDABLE  0, 0, 386, 252
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    RTEXT           "往来类型:",IDC_STATIC,2,34,39,10
+    COMBOBOX        IDC_COMBO_KFLX,43,32,87,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "签 约 人:",IDC_STATIC,2,54,39,10
+    RTEXT           "客户名称:",IDC_STATIC,136,34,39,10
+    COMBOBOX        IDC_COMBO_QWR,43,52,87,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_KFMC,172,32,153,104,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "签约日期:",IDC_STATIC,136,54,39,10
+    RTEXT           "合同金额:",IDC_STATIC,136,14,39,10
+    RTEXT           "项目描述:",IDC_STATIC,2,71,39,10
+    GROUPBOX        "收款条件",IDC_STATIC_N1,2,105,379,128
+    RTEXT           "收款名称:",IDC_STATIC_N2,6,120,39,10
+    COMBOBOX        IDC_COMBO_SFKMC,48,118,87,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "收款时间:",IDC_STATIC_N3,140,120,39,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,172,52,66,12
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,180,118,61,12
+    RTEXT           "收款金额:",IDC_STATIC_N4,244,120,39,10
+    EDITTEXT        IDC_EDIT_HTJR,172,12,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JR,285,118,50,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_SFKTJ,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,8,153,358,75
+    PUSHBUTTON      "添加条件",IDC_BTN_ADDTJ,338,117,38,13
+    PUSHBUTTON      "删除条件",IDC_BTN_DELTJ,338,134,38,13
+    LTEXT           "元",IDC_STATIC,226,14,10,10
+    EDITTEXT        IDC_EDIT_XMMS,44,69,328,30,ES_MULTILINE | ES_AUTOHSCROLL
+    RTEXT           "备注:",IDC_STATIC,5,135,32,10
+    EDITTEXT        IDC_EDIT_BZ,45,135,233,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "新增合同",IDC_BTN_ADDHT,338,235,38,13
+    EDITTEXT        IDC_EDIT_TCBL,302,53,30,13,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,336,56,14,13
+    RTEXT           "合同编号:",IDC_STATIC,2,14,39,10
+    EDITTEXT        IDC_EDIT_HTBH,44,12,87,12,ES_AUTOHSCROLL
+    LTEXT           "提成比例:",IDC_STATIC,261,56,39,10
+    EDITTEXT        IDC_EDIT_JR2,285,135,50,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "金额大写",IDC_BTN_JRDS,338,31,38,13
+    EDITTEXT        IDC_EDIT_DSJR,238,12,144,12,ES_AUTOHSCROLL
+END
+
+IDD_ADDCUSTOMER DIALOG DISCARDABLE  0, 0, 386, 252
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,59,11,142,14,ES_AUTOHSCROLL
+    RTEXT           "供应商名称:",IDC_STATIC_NAME,6,13,47,12
+    EDITTEXT        IDC_EDIT2,59,31,142,14,ES_AUTOHSCROLL
+    RTEXT           "联系人:",IDC_STATIC,6,33,47,12
+    EDITTEXT        IDC_EDIT5,59,47,142,14,ES_AUTOHSCROLL
+    RTEXT           "电话:",IDC_STATIC,6,49,47,12
+    PUSHBUTTON      "保存",IDC_BTN_ADD,312,9,56,13
+    PUSHBUTTON      "删除",IDC_BTN_DEL,312,29,56,13
+    CONTROL         "List1",IDC_LIST_KFZL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,9,75,368,161
+    PUSHBUTTON      "导出Excel",IDC_BTN_EXPORT,313,49,56,13
+END
+
+IDD_YUJING_DLG DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SK,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,7,26,373,150
+    EDITTEXT        IDC_EDIT_HTBH,96,191,175,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "查看详情",IDC_BTN_SELECTHT,285,183,45,13
+    RTEXT           "点选上面的合同编号:",IDC_STATIC,7,192,85,15
+    PUSHBUTTON      "导出Excel",IDC_BTN_EXPORT,335,183,45,13
+    PUSHBUTTON      "新增收款",IDC_BTN_ADDSK,285,200,45,13
+    PUSHBUTTON      "新增付款",IDC_BTN_ADDFK,335,200,45,13
+    GROUPBOX        "预警信息表",IDC_STATIC,7,14,373,166
+END
+
+IDD_SELECTHT_DLG DIALOG DISCARDABLE  0, 0, 425, 307
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "合同明细"
+FONT 12, "宋体"
+BEGIN
+    RTEXT           "客户类型:",IDC_STATIC,8,34,45,10
+    RTEXT           "客户名称:",IDC_STATIC,161,34,45,10
+    RTEXT           "签 约 人:",IDC_STATIC,7,54,45,10
+    RTEXT           "签约日期:",IDC_STATIC,161,54,45,10
+    RTEXT           "合同金额:",IDC_STATIC,161,14,45,10
+    RTEXT           "项目描述:",IDC_STATIC,8,71,45,10
+    GROUPBOX        "收款条件",IDC_STATIC_N1,7,105,405,87
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,209,52,66,12
+    EDITTEXT        IDC_EDIT_HTJR,209,12,54,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "List1",IDC_LIST_SFKTJ,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,117,387,64
+    LTEXT           "元",IDC_STATIC,267,14,84,10
+    EDITTEXT        IDC_EDIT_XMMS,56,69,350,30,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_TCBL,341,53,30,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "%",IDC_STATIC,375,56,14,13
+    RTEXT           "合同编号:",IDC_STATIC,8,14,45,10
+    EDITTEXT        IDC_EDIT_HTBH,56,12,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "提成比例:",IDC_STATIC,300,56,37,8
+    EDITTEXT        IDC_EDIT_KFLX,56,32,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_KFMC,209,32,174,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_QYR,56,52,100,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "开票明细",IDC_STATIC_N2,7,197,405,105
+    CONTROL         "List1",IDC_LIST_KPMX,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,228,387,68
+    RTEXT           "应开票金额:",IDC_STATIC,12,212,49,10
+    EDITTEXT        IDC_EDIT_KP1,62,211,41,12,ES_AUTOHSCROLL
+    RTEXT           "已开票金额:",IDC_STATIC,109,213,49,10
+    EDITTEXT        IDC_EDIT_KP2,160,210,41,12,ES_AUTOHSCROLL
+    RTEXT           "未开票金额:",IDC_STATIC,205,211,49,10
+    EDITTEXT        IDC_EDIT_KP3,257,209,41,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "合同导出Excel",IDC_BTN_EXPORTXLS,348,6,63,15
+END
+
+IDD_DLG_SHT DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_HTL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,6,103,374,83
+    COMBOBOX        IDC_COMBO_QWR,103,21,137,77,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GONGYI,103,54,137,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BTN_SELECT,321,75,50,17
+    CONTROL         "按签约人查询:",IDC_CHECK_QYR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,21,73,11
+    CONTROL         "按签约日期查询:",IDC_CHECK_QYDATA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,38,73,11
+    CONTROL         "按供应商查询:",IDC_CHECK_GongYi,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,55,73,11
+    CONTROL         "按客户查询:",IDC_CHECK_KeFu,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,72,73,11
+    COMBOBOX        IDC_COMBO_KEFU,103,71,137,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,103,38,59,11
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,181,38,59,11
+    LTEXT           "到",IDC_STATIC,167,38,11,11
+    GROUPBOX        "勾选可以限定查询条件,选择数据然后点查询",IDC_STATIC,6,7,
+                    374,89
+    RTEXT           "选择查询出来的合同编号:",IDC_STATIC,17,199,101,12
+    EDITTEXT        IDC_EDIT_HTBH,123,198,94,13,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "合同详情",IDC_BTN_CKXQ,231,199,49,13
+    PUSHBUTTON      "下一步",IDC_BTN_NEXT,302,199,49,13
+END
+
+IDD_ADDSFK_DLG DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    RTEXT           "合同编号:",IDC_STATIC,7,9,59,11
+    EDITTEXT        IDC_EDIT_HTBH,69,7,115,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "合同详情",IDC_BTN_HTXQ,205,7,72,15
+    CONTROL         "List1",IDC_LIST_SFKTJ,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,42,373,101
+    GROUPBOX        "",IDC_STATIC_N1,7,26,374,117
+    RTEXT           "收款条件:",IDC_STATIC_TJ,28,156,40,13
+    RTEXT           "收款条件:",IDC_STATIC_TJ2,28,175,40,13
+    RTEXT           "收款条件:",IDC_STATIC_TJ3,148,175,40,13
+    RTEXT           "收款条件:",IDC_STATIC_TJ4,28,194,40,13
+    RTEXT           "收款条件:",IDC_STATIC_TJ5,148,194,40,13
+    EDITTEXT        IDC_EDIT_TJ,70,153,192,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,70,192,64,13
+    EDITTEXT        IDC_EDIT_YJJR,197,173,65,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_SJJR,197,192,65,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BTN_ADDSF,277,211,50,16
+    EDITTEXT        IDC_EDIT_YJSJ,70,173,65,13,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "银行:",IDC_STATIC_TJ6,28,213,40,13
+    EDITTEXT        IDC_EDIT_YH,70,211,192,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_KPGL DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "开票管理"
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_YIKPMONEY,58,11,64,13,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_KPMX,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,6,101,374,107
+    RTEXT           "应开票金额:",IDC_STATIC,0,13,52,11
+    EDITTEXT        IDC_EDIT_YKPMONEY,184,11,64,13,ES_AUTOHSCROLL
+    RTEXT           "已开票金额:",IDC_STATIC,128,13,52,11
+    EDITTEXT        IDC_EDIT_WKPMONEY,311,11,64,13,ES_AUTOHSCROLL
+    RTEXT           "未开票金额:",IDC_STATIC,257,13,52,11
+    GROUPBOX        "添加开票，填写下列内容然后点添加",IDC_STATIC,5,36,376,
+                    56
+    PUSHBUTTON      "导出Excel",IDC_BTN_EXPORT,308,221,67,15
+    EDITTEXT        IDC_EDIT_FPHM,55,50,97,12,ES_AUTOHSCROLL
+    RTEXT           "发票号码:",IDC_STATIC,16,52,37,12
+    RTEXT           "开票时间:",IDC_STATIC,171,71,37,12
+    RTEXT           "开票金额:",IDC_STATIC,171,52,37,12
+    RTEXT           "发票类型:",IDC_STATIC,16,71,37,12
+    COMBOBOX        IDC_COMBO1,55,71,97,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_KPMONEY,209,49,58,12,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,209,71,58,12
+    PUSHBUTTON      "添加开票",IDC_BTN_ADDKP,315,48,52,15
+    PUSHBUTTON      "删除选中行",IDC_BTN_DEL,315,71,52,15
+END
+
+IDD_DLG_BTN DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "客户管理",IDC_BTN_BKF,12,8,42,22
+    PUSHBUTTON      "供应商",IDC_BTN_BGYS,63,8,42,22
+    PUSHBUTTON      "签约人",IDC_BTN_BQYR,114,8,42,22
+    PUSHBUTTON      "新增合同",IDC_BTN_ADDHT,12,43,42,22
+    PUSHBUTTON      "查询合同",IDC_BTN_HTSELECT,63,43,42,22
+    PUSHBUTTON      "删除合同",IDC_BTN_HTDelete,114,43,42,22
+    PUSHBUTTON      "新增收款",IDC_BTN_ADDSK,46,84,41,18
+    PUSHBUTTON      "新增付款",IDC_BTN_ADDFK,99,84,41,18
+    PUSHBUTTON      "新增开票",IDC_BTN_ADDKP,34,117,39,16
+    PUSHBUTTON      "提成录入",IDC_BTN_AddTCGL,33,148,39,16
+    PUSHBUTTON      "按合同录入提成",IDC_BTN_HTADDTC,100,148,86,11
+END
+
+IDD_DLG_TCGL DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提成管理"
+FONT 12, "宋体"
+BEGIN
+    RTEXT           "签约人:",IDC_STATIC,23,19,40,10
+    EDITTEXT        IDC_EDIT_NIANDU,212,15,42,14,ES_AUTOHSCROLL
+    RTEXT           "提成年度:",IDC_STATIC,169,19,40,10
+    COMBOBOX        IDC_COMBO_QWR,67,17,96,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询回款",IDC_BTN_SELECTHT,306,14,41,15
+    GROUPBOX        "按签约人和年度查询",IDC_STATIC,9,4,368,32
+    CONTROL         "List1",IDC_LIST_HT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,50,362,56
+    GROUPBOX        "年度回款明细表",IDC_STATIC,9,39,368,87
+    CONTROL         "List1",IDC_LIST_HT2,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,140,362,59
+    GROUPBOX        "合同提成明细",IDC_STATIC,9,129,368,122
+    PUSHBUTTON      "添加提成记录",IDC_BTN_ADDTCMC,302,236,62,13
+    RTEXT           "点选上面的合同编号然后点查询明细:",IDC_STATIC,21,112,
+                    159,11
+    RTEXT           "合同金额:",IDC_STATIC,14,206,38,11
+    RTEXT           "回款总额:",IDC_STATIC,14,221,38,11
+    EDITTEXT        IDC_EDIT_HTBH,187,111,105,11,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_HTJR,55,204,76,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "提成比例:",IDC_STATIC,14,236,38,11
+    PUSHBUTTON      "查询明细",IDC_BTN_MCSELECT,320,109,50,14
+    EDITTEXT        IDC_EDIT_HKJR,55,220,76,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "可提成金额:",IDC_STATIC,134,206,48,11
+    EDITTEXT        IDC_EDIT_BL,55,236,34,12,ES_AUTOHSCROLL
+    RTEXT           "已提成金额:",IDC_STATIC,134,221,48,11
+    RTEXT           "未提成金额:",IDC_STATIC,134,236,48,11
+    EDITTEXT        IDC_EDIT_KT,184,204,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_YT,184,220,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WT,184,236,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,302,202,62,12
+    RTEXT           "提成金额:",IDC_STATIC,252,221,48,11
+    EDITTEXT        IDC_EDIT_TCMoney,302,220,62,12,ES_AUTOHSCROLL
+    RTEXT           "提成日期:",IDC_STATIC,253,204,48,11
+    PUSHBUTTON      "设置比例",IDC_BTN_SETBL,94,235,37,13
+END
+
+IDD_DLG_TCGLAddByHT DIALOG DISCARDABLE  0, 0, 386, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "按合同录入提成"
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_HKMC,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,160,362,56
+    GROUPBOX        "回款明细表",-1,9,148,368,75
+    CONTROL         "List1",IDC_LIST_TCMC,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,81,362,56
+    GROUPBOX        "合同提成明细",-1,9,70,368,75
+    PUSHBUTTON      "添加提成记录",IDC_BTN_ADDTCMC,305,52,62,13
+    RTEXT           "合同编号:",-1,17,5,38,11
+    RTEXT           "合同金额:",-1,17,20,38,11
+    RTEXT           "回款总额:",-1,17,35,38,11
+    EDITTEXT        IDC_EDIT_HTBH,57,5,184,11,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_HTJR,57,20,76,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "提成比例:",-1,17,50,38,11
+    EDITTEXT        IDC_EDIT_HKJR,57,36,76,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "可提成金额:",-1,137,22,48,11
+    EDITTEXT        IDC_EDIT_BL,57,52,34,12,ES_AUTOHSCROLL
+    RTEXT           "已提成金额:",-1,137,37,48,11
+    RTEXT           "未提成金额:",-1,137,52,48,11
+    EDITTEXT        IDC_EDIT_KT,187,20,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_YT,187,36,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WT,187,52,57,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,305,18,62,12
+    RTEXT           "提成金额:",-1,255,37,48,11
+    EDITTEXT        IDC_EDIT_TCMoney,305,36,62,12,ES_AUTOHSCROLL
+    RTEXT           "提成日期:",-1,256,20,48,11
+    PUSHBUTTON      "设置比例",IDC_BTN_SETBL,97,51,37,13
+    PUSHBUTTON      "记录导出Excel",IDC_BTN_EXPORTXLS,316,234,61,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Azeng软件\0"
+            VALUE "FileDescription", "Build 20190509\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CHTGL\0"
+            VALUE "LegalCopyright", "版权所有 (C) ZSZ\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CHTGL.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CHTGL 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_YUJING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_SHT, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_ADDSFK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "基本信息"
+    BEGIN
+        MENUITEM "客户资料",                    IDM_KEFU_BASE
+        MENUITEM "供应商资料",                  IDM_GONGYI_BASE
+        MENUITEM "签约人",                      IDM_QYR_BASE
+    END
+    POPUP "业务录入"
+    BEGIN
+        MENUITEM "新增合同",                    IDM_ADDHTM
+        MENUITEM "删除合同",                    IDM_MDELHT
+        MENUITEM SEPARATOR
+        MENUITEM "新增收款",                    IDM_ADDSK
+        MENUITEM "新增付款",                    IDM_ADDFK
+        MENUITEM SEPARATOR
+        MENUITEM "新增开票",                    IDM_ADDKP
+        MENUITEM SEPARATOR
+        POPUP "提成录入"
+        BEGIN
+            MENUITEM "按合同录入提成",              IDM_TCGLAddByHT
+            MENUITEM "按签约人和年度",              IDM_TCGL_ADD
+        END
+    END
+    POPUP "数据查询"
+    BEGIN
+        MENUITEM "合同查询",                    IDM_SELECTHT
+        MENUITEM "开票查询",                    IDM_KPCX
+    END
+    MENUITEM "预警信息",                    IDM_YJGN
+    POPUP "系统设置"
+    BEGIN
+        MENUITEM "数据备份",                    IDM_DATABACKUP
+        MENUITEM "数据还原",                    IDM_DATARES
+        MENUITEM "类型设置",                    IDM_SYSSETM
+        MENUITEM "关于",                        IDM_ABOUTBOX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_LOGINBK         BITMAP  DISCARDABLE     "res\\bk.bmp"
+IDB_BMP_JBXX            BITMAP  DISCARDABLE     "res\\jbsx.bmp"
+IDB_BMP_HTGL            BITMAP  DISCARDABLE     "res\\htgl.bmp"
+IDB_BMP_WLGL            BITMAP  DISCARDABLE     "res\\wlgl.bmp"
+IDB_BMP_YJSX            BITMAP  DISCARDABLE     "res\\yjsx.bmp"
+IDB_BMP_KPGL            BITMAP  DISCARDABLE     "res\\kpgl.bmp"
+IDB_BMP_TCGL            BITMAP  DISCARDABLE     "res\\tcgl.bmp"
+IDB_BMP_BQYR            BITMAP  DISCARDABLE     "res\\btn_QYR.bmp"
+IDB_BMP_BGYS            BITMAP  DISCARDABLE     "res\\btn_GYS.bmp"
+IDB_BMP_BKFGL           BITMAP  DISCARDABLE     "res\\btn_KFGL.bmp"
+IDB_BMP_HTGL_S          BITMAP  DISCARDABLE     "res\\btn_HTGL_S.bmp"
+IDB_BMP_HTGL_A          BITMAP  DISCARDABLE     "res\\btn_HTGL_A.bmp"
+IDB_BMP_HTGL_D          BITMAP  DISCARDABLE     "res\\btn_HTGL_D.bmp"
+IDB_BMP_QRCODE          BITMAP  DISCARDABLE     "res\\qrcode.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CHTGL(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_YJGN                "按照收款条件未回款预警功能"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CHTGL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
